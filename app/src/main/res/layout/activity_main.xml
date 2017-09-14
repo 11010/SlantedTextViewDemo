@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bodor.com.slantedtextviewdemo.MainActivity">
+
+    <ImageView
+        android:layout_centerInParent="true"
+        android:id="@+id/wang"
+        android:background="@drawable/wangfangzhen"
+        android:layout_width="200dp"
+        android:layout_height="200dp" />
+    <com.haozhang.lib.SlantedTextView
+        android:layout_alignTop="@+id/wang"
+        android:layout_alignLeft="@+id/wang"
+        android:gravity = "center"
+        android:id="@+id/slanted"
+        app:slantedBackgroundColor="@android:color/holo_blue_light"
+        app:slantedLength="20dp"
+        app:slantedMode="left"
+        app:slantedText="王方振"
+        app:slantedTextColor="#fff"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+</RelativeLayout>
